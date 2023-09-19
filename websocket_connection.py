@@ -9,6 +9,6 @@ def on_message(ws, message):
 
 
 def start_websocket_listener():
-    ws = websocket.WebSocketApp("ws://localhost:9002/",
+    ws = websocket.WebSocketApp("ws://localhost:8080/",
                                 on_message=on_message)
     ws.run_forever()
